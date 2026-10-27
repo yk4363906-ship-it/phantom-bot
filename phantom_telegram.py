@@ -11,7 +11,7 @@ import threading
 TOKEN = "8678007316:AAFgLcL_GCySxVQYAfgR2p2N29ohLSGvNXU"
 OWNER_ID = 8330749847
 
-# 🌟 تنظیمات جوین اجباری (آیدی و لینک گروه شما تنظیم شد)
+# 🌟 تنظیمات جوین اجباری
 FORCE_JOIN_CHAT_ID = -1003902709504 
 FORCE_JOIN_LINK = "https://t.me/+-qLgbwyMsb5mN2I8"
 
@@ -733,8 +733,6 @@ def cmd_welcome_off(message):
     if not is_admin(message.from_user.id): return
     bot_settings["welcome_enabled"] = False; save_data(); bot.reply_to(message, "⛔ خوش‌آمدگویی متوقف شد.")
 
-print("👻 PHANTOM SHOP | DICE 🎲 (Telegram) روشن شد - نسخه نهایی")
-bot.infinity_polling(timeout=10, long_polling_timeout=5, skip_pending=True)
 # ========== وب‌سرور برای بیدار نگه داشتن ربات در Render ==========
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -751,3 +749,6 @@ def run_health_server():
 
 threading.Thread(target=run_health_server, daemon=True).start()
 # =================================================================
+
+print("👻 PHANTOM SHOP | DICE 🎲 (Telegram) روشن شد - نسخه نهایی")
+bot.infinity_polling(timeout=10, long_polling_timeout=5, skip_pending=True)
