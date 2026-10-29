@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # ✅ تنظیمات اصلی
-TOKEN = "8678007316:AAEgpOQNpp0K1r1d-A0gy7oN24gxoUzH374"
+TOKEN = "8678007316:AAELTdy_egRe1VFOxzybEV2CbQHUewRHM5Y"
 OWNER_ID = 8330749847
 
 FORCE_JOIN_CHAT_ID = -1003902709504
